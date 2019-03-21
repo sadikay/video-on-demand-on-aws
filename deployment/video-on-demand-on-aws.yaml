@@ -559,9 +559,9 @@ Resources:
           Destination: !Ref Destination
           FrameCapture: !Ref FrameCapture
           ArchiveSource: !Ref Glacier
-          MediaConvert_Template_2160p: !Sub ${AWS::StackName}_Ott_2160p_Avc_Aac_16x9
-          MediaConvert_Template_1080p: !Sub ${AWS::StackName}_Ott_1080p_Avc_Aac_16x9
-          MediaConvert_Template_720p: !Sub ${AWS::StackName}_Ott_720p_Avc_Aac_16x9
+          MediaConvert_Template_2160p: !Sub ${AWS::StackName}_Ott_2160p_Avc_Aac_9x16
+          MediaConvert_Template_1080p: !Sub ${AWS::StackName}_Ott_1080p_Avc_Aac_9x16
+          MediaConvert_Template_720p: !Sub ${AWS::StackName}_Ott_720p_Avc_Aac_9x16
           CloudFront: !GetAtt CloudFront.DomainName
 
   Mediainfo:

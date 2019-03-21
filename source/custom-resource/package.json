@@ -2,7 +2,7 @@
   "name": "vod-deployment",
   "version": "1.0.0",
   "engines": {
-    "node": "^6.10"
+    "node": "^10.12"
   },
   "description": "cfn custom resources for vod workflow",
   "main": "na",

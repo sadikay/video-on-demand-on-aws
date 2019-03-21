@@ -21,7 +21,7 @@ describe('#PROFILER::', () => {
   let data = {
       Item: {
           guid: "12345678",
-          srcMediainfo:"{\"video\":[{\"height\":720,\"width\":1280}]}",
+          srcMediainfo:"{\"video\":[{\"height\":1280,\"width\":720}]}",
           jobTemplate_2160p:"tmpl1",
           jobTemplate_1080p:"tmpl2",
           jobTemplate_720p:"tmpl3",
@@ -38,8 +38,8 @@ describe('#PROFILER::', () => {
 
     let response = await lambda.handler(_event)
 		expect(response.jobTemplate).to.equal('tmpl3');
-    expect(response.frameCaptureHeight).to.equal(720);
-    expect(response.frameCaptureWidth).to.equal(1280);
+    expect(response.frameCaptureHeight).to.equal(1280);
+    expect(response.frameCaptureWidth).to.equal(720);
 
   });
 
@@ -48,8 +48,8 @@ describe('#PROFILER::', () => {
 
     let response = await lambda.handler(_tmpl_event)
     expect(response.jobTemplate).to.equal('customTemplate');
-    expect(response.frameCaptureHeight).to.equal(720);
-    expect(response.frameCaptureWidth).to.equal(1280); 
+    expect(response.frameCaptureHeight).to.equal(1280);
+    expect(response.frameCaptureWidth).to.equal(720);
   });
 
   it('should return "DB ERROR" when db get fails', async () => {

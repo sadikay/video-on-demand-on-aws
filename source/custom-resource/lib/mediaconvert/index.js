@@ -24,9 +24,9 @@ let templates = async (config) => {
     region: process.env.AWS_REGION
   });
   const templates = [
-    './lib/mediaconvert/templates/2160p_avc_aac_16x9.json',
-    './lib/mediaconvert/templates/1080p_avc_aac_16x9.json',
-    './lib/mediaconvert/templates/720p_avc_aac_16x9.json'
+    './lib/mediaconvert/templates/2160p_avc_aac_9x16.json',
+    './lib/mediaconvert/templates/1080p_avc_aac_9x16.json',
+    './lib/mediaconvert/templates/720p_avc_aac_9x16.json'
   ];
 
   try {
