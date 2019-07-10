@@ -51,12 +51,9 @@ exports.handler = async (event) => {
           "AudioSelectors": {
             "Audio Selector 1": {
               "Offset": 0,
-              "DefaultSelection": "NOT_DEFAULT",
+              "DefaultSelection": "DEFAULT",
               "ProgramSelection": 1,
-              "SelectorType": "TRACK",
-              "Tracks": [
-                1
-              ]
+              "SelectorType": "TRACK"
             }
           },
           "VideoSelector": {
