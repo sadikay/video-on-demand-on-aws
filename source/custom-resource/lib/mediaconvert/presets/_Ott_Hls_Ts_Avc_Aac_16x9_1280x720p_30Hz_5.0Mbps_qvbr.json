@@ -54,9 +54,9 @@
     "RespondToAfd": "NONE",
     "Sharpness": 50,
     "AfdSignaling": "NONE",
-    "Height": 720,
-    "Width": 1280,
-    "ScalingBehavior": "DEFAULT",
+    "Height": 1280,
+    "Width": 720,
+    "ScalingBehavior": "STRETCH_TO_OUTPUT",
     "ColorMetadata": "INSERT",
     "AntiAlias": "ENABLED",
     "TimecodeInsertion": "DISABLED"
